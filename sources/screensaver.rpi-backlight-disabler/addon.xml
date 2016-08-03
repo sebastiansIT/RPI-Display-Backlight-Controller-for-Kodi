@@ -38,5 +38,7 @@
 		<email>sebastian@sebastiansit.de</email>
         <source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/screensaver.rpi-backlight-disabler</source>
 		<language></language>
+        <disclaimer>Works with Rasperry Pi 7" Display only.</disclaimer>
+        <disclaimer lang="de">Nur für das Raspberry Pi 7" Display geignet.</disclaimer>
 	</extension>
 </addon>

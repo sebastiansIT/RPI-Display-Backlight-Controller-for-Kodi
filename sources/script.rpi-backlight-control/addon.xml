@@ -44,5 +44,7 @@
 		<!--<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>-->
 		<source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/script.rpi-backlight-control</source>
 		<email>sebastian@sebastiansit.de</email>
+        <disclaimer>Works with Rasperry Pi 7" Display only.</disclaimer>
+        <disclaimer lang="de">Nur für das Raspberry Pi 7" Display geignet.</disclaimer>
 	</extension>
 </addon>
