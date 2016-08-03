@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+    Copyright 2016 Sebastian Spautz
+
+    This file is part of "RPI Display Backlight Control for Kodi".
+    
+    "RPI Display Backlight Control for Kodi" is free software: you can #
+    redistribute it and/or modify it under the terms of the GNU General 
+    Public License as published by the Free Software Foundation, either 
+    version 3 of the License, or any later version.
+
+    "RPI Display Backlight Control for Kodi" is distributed in the hope 
+    that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+    implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+-->
+
+<addon id="de.sebastiansit.kodi.rpi.backlight.screensaver" name="Disable RPI Backlight" version="0.1.0" provider-name="SebastiansIT">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+    
+    <!-- Screensaver: Disable Backlight -->
+	<extension point="xbmc.ui.screensaver" library="screensaver.py" />
+  
+	<!-- Plugin-Metadata -->
+	<extension point="xbmc.addon.metadata">
+		<platform>linux</platform>
+		<summary lang="en">Screensaver disabeling the display backlight</summary>
+		<description lang="en">This screensaver disables the backlight of the offical Raspberry Pi 7" DSI display.</description>
+		<summary lang="de">Bildschirmschoner der das Backlight des Displays deaktiviert</summary>
+		<description lang="en">Dieser Bildschirmschoner deaktiviert das Backlight des offiziellen Rasperry Pi 7" DSI Displays.</description>
+		<license>GNU General Public License Version 3</license>
+		<email>sebastian@sebastiansit.de</email>
+		<language></language>
+	</extension>
+</addon>

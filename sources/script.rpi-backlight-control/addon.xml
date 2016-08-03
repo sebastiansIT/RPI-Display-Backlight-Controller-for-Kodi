@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+    Copyright 2016 Sebastian Spautz
+
+    This file is part of "RPI Display Backlight Control for Kodi".
+    
+    "RPI Display Backlight Control for Kodi" is free software: you can #
+    redistribute it and/or modify it under the terms of the GNU General 
+    Public License as published by the Free Software Foundation, either 
+    version 3 of the License, or any later version.
+
+    "RPI Display Backlight Control for Kodi" is distributed in the hope 
+    that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+    implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+-->
+
+<addon id="de.sebastiansit.kodi.rpi.backlight.control" name="RPI Backlight Brightness Control" version="0.1.0" provider-name="SebastiansIT">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+	<!-- Application: Set the brightness to the configured value -->
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	
+	<!-- Service: Set the brightness on startup to the configured value -->
+	<extension point="xbmc.service" library="startup.py" start="startup" />
+  
+	<!-- Plugin-Metadata -->
+	<extension point="xbmc.addon.metadata">
+		<platform>linux</platform>
+		<summary lang="en">Raspberry Pi DSI Touchdisplay Backlight Control</summary>
+		<description lang="en">Plugin to manipulate the backlight brightness of the Raspberry Pi 7" DSI display.</description>
+		<summary lang="de">Raspberry Pi DSI Touchdisplay Backlight Einstellungen</summary>
+		<description lang="en">Plugin mit dem sich die Helligkeit des Raspberry Pi 7" DSI Touchdisplay einstellen lässt.</description>
+		<license>GNU General Public License Version 3</license>
+		<language></language>
+		<!--<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+		<source>https://github.com/zag2me/script.hello.world</source>-->
+		<email>sebastian@sebastiansit.de</email>
+	</extension>
+</addon>
