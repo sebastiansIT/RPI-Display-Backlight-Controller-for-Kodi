@@ -1,1 +1,4 @@
-1.0.0 Initial Release
+v0.1.0 (2016-07-02)
+- Initial Release
+- adds a experimental add-on to configure the brightness of the backlight
+- adds a service that configure the brightness on startup

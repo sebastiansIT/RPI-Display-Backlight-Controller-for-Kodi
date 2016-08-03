@@ -5,7 +5,7 @@
 
     This file is part of "RPI Display Backlight Control for Kodi".
     
-    "RPI Display Backlight Control for Kodi" is free software: you can #
+    "RPI Display Backlight Control for Kodi" is free software: you can
     redistribute it and/or modify it under the terms of the GNU General 
     Public License as published by the Free Software Foundation, either 
     version 3 of the License, or any later version.
@@ -36,6 +36,7 @@
 		<description lang="en">Dieser Bildschirmschoner deaktiviert das Backlight des offiziellen Rasperry Pi 7" DSI Displays.</description>
 		<license>GNU General Public License Version 3</license>
 		<email>sebastian@sebastiansit.de</email>
+        <source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/screensaver.rpi-backlight-disabler</source>
 		<language></language>
 	</extension>
 </addon>

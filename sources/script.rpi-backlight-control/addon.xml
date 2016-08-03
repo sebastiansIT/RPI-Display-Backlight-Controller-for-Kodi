@@ -5,7 +5,7 @@
 
     This file is part of "RPI Display Backlight Control for Kodi".
     
-    "RPI Display Backlight Control for Kodi" is free software: you can #
+    "RPI Display Backlight Control for Kodi" is free software: you can
     redistribute it and/or modify it under the terms of the GNU General 
     Public License as published by the Free Software Foundation, either 
     version 3 of the License, or any later version.
@@ -23,6 +23,7 @@
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
+    
 	<!-- Application: Set the brightness to the configured value -->
 	<extension point="xbmc.python.script" library="addon.py">
 		<provides>executable</provides>
@@ -40,8 +41,8 @@
 		<description lang="en">Plugin mit dem sich die Helligkeit des Raspberry Pi 7" DSI Touchdisplay einstellen lässt.</description>
 		<license>GNU General Public License Version 3</license>
 		<language></language>
-		<!--<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
-		<source>https://github.com/zag2me/script.hello.world</source>-->
+		<!--<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>-->
+		<source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/script.rpi-backlight-control</source>
 		<email>sebastian@sebastiansit.de</email>
 	</extension>
 </addon>
