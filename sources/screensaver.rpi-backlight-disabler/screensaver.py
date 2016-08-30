@@ -1,4 +1,4 @@
-#    Copyright 2016 Sebastian Spautz
+#    Copyright 2016 Sebastian Spautz <sebastian@human-injection.de>
 #
 #    This file is part of "RPI Display Backlight Control for Kodi".
 #   
@@ -36,13 +36,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 
     def onInit(self):
         self.log('Start Screensaver')
-        #self.abort_requested = False
         self.exit_monitor = self.ExitMonitor(self.exit)
         shellCommand = 'echo 1 > /sys/class/backlight/rpi_backlight/bl_power'
         os.system(shellCommand)
 
     def exit(self):
-        #self.abort_requested = True
         self.exit_monitor = None
         shellCommand = 'echo 0 > /sys/class/backlight/rpi_backlight/bl_power'
         os.system(shellCommand)

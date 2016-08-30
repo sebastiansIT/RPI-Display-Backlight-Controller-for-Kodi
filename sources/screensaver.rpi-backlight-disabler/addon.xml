@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <!--
-    Copyright 2016 Sebastian Spautz
+    Copyright 2016 Sebastian Spautz <sebastian@human-injection.de>
 
     This file is part of "RPI Display Backlight Control for Kodi".
     
@@ -34,8 +34,8 @@
 		<description lang="en">This screensaver disables the backlight of the offical Raspberry Pi 7" DSI display.</description>
 		<disclaimer lang="en">Works with Rasperry Pi 7" Display only. Distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY!</disclaimer>
         <summary lang="de">Bildschirmschoner der das Backlight des Displays deaktiviert</summary>
-		<description lang="de">Dieser Bildschirmschoner deaktiviert das Backlight des offiziellen Rasperry Pi 7" DSI Displays.</description>
-		<disclaimer lang="de">Nur für das Raspberry Pi 7" Display geignet. Nutzung auf eigene Gefahrt.</disclaimer>
+		<description lang="de">Dieser Bildschirmschoner deaktiviert die Hintergrundbeleuchtung des offiziellen Rasperry Pi 7" DSI Displays.</description>
+		<disclaimer lang="de">Nur für das Raspberry Pi 7" DSI Display geeignet. Nutzung auf eigene Gefahrt.</disclaimer>
         <license>GNU General Public License Version 3</license>
 		<email>sebastian@sebastiansit.de</email>
         <source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/screensaver.rpi-backlight-disabler</source>
