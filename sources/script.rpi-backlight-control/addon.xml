@@ -19,9 +19,11 @@
     along with this program.  If not, see http://www.gnu.org/licenses/.
 -->
 
-<addon id="de.sebastiansit.kodi.rpi.backlight.control" name="RPI Backlight Brightness Control" version="0.1.0" provider-name="SebastiansIT">
+<addon id="de.sebastiansit.kodi.rpi.backlight.control" 
+       name="RPI Backlight Brightness Control" 
+       version="0.1.1" provider-name="SebastiansIT">
 	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
     
 	<!-- Application: Set the brightness to the configured value -->
@@ -47,4 +49,15 @@
 		<source>https://github.com/sebastiansIT/RPI-Display-Backlight-Controller-for-Kodi/tree/master/sources/script.rpi-backlight-control</source>
 		<email>sebastian@sebastiansit.de</email>
 	</extension>
+    
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+    
+    <news>v0.1.1 (2017-03-04)
+        - update to Kodi 17.0 (Krypton)  
+    v0.1.0 (2016-07-02)
+        - Initial Release
+        - adds a experimental add-on to configure the brightness of the backlight
+        - adds a service that configure the brightness on startup</news>
 </addon>
