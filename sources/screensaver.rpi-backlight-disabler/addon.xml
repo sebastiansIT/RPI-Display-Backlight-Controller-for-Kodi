@@ -21,7 +21,7 @@
 
 <addon id="de.sebastiansit.kodi.rpi.backlight.screensaver" 
        name="Disable RPI Backlight" 
-       version="0.1.1" provider-name="SebastiansIT">
+       version="0.1.2" provider-name="SebastiansIT">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -48,7 +48,9 @@
         <icon>icon.png</icon>
     </assets>
     
-    <news>v0.1.1 (2017-03-04)
+    <news>v0.1.2 (2017-04-21)
+        - If Kodi isn't run as user root, try sudo for shell comands to disable/enable backlight  
+	v0.1.1 (2017-03-04)
         - update to Kodi 17.0 (Krypton)  
     v0.1.0 (2016-07-02)
         - Initial Release

@@ -34,18 +34,25 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         def onScreensaverDeactivated(self):
             self.exit_callback()
 
+	def prepareShellCommand(command):
+		if os.geteuid() != 0:
+			self.log('Don\'t root, try sudo to toggle backlight.')
+			return 'sudo bash -c \'' + command + '\''
+		else:
+			return command;
+
     def onInit(self):
         self.log('Start Screensaver')
         self.exit_monitor = self.ExitMonitor(self.exit)
-        shellCommand = 'echo 1 > /sys/class/backlight/rpi_backlight/bl_power'
+        shellCommand = self.prepareShellCommand('echo 1 > /sys/class/backlight/rpi_backlight/bl_power')
         os.system(shellCommand)
 
     def exit(self):
         self.exit_monitor = None
-        shellCommand = 'echo 0 > /sys/class/backlight/rpi_backlight/bl_power'
+        shellCommand = self.prepareShellCommand('echo 0 > /sys/class/backlight/rpi_backlight/bl_power')
         os.system(shellCommand)
         self.close()
-        self.log('Stop Screensaver')
+        self.log('Stopped Screensaver')
 
     def log(self, msg):
         xbmc.log(u'%(name)s: %(message)s' % {'name': addonName, 'message': msg})
