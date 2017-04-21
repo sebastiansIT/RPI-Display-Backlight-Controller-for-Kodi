@@ -34,12 +34,12 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         def onScreensaverDeactivated(self):
             self.exit_callback()
 
-	def prepareShellCommand(command):
-		if os.geteuid() != 0:
-			self.log('Don\'t root, try sudo to toggle backlight.')
-			return 'sudo bash -c \'' + command + '\''
-		else:
-			return command;
+    def prepareShellCommand(self, command):
+        if os.geteuid() != 0:
+            self.log('Don\'t root, try sudo to toggle backlight.')
+            return 'sudo bash -c \'' + command + '\''
+        else:
+            return command;
 
     def onInit(self):
         self.log('Start Screensaver')
