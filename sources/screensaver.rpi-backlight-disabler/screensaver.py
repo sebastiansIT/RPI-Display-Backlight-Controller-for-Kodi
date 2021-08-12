@@ -44,12 +44,12 @@ class Screensaver(xbmcgui.WindowXMLDialog):
     def onInit(self):
         self.log('Start Screensaver')
         self.exit_monitor = self.ExitMonitor(self.exit)
-        shellCommand = self.prepareShellCommand('echo 1 > /sys/class/backlight/rpi_backlight/bl_power')
+        shellCommand = self.prepareShellCommand('echo 1 | sudo tee /sys/class/backlight/rpi_backlight/bl_power')
         os.system(shellCommand)
 
     def exit(self):
         self.exit_monitor = None
-        shellCommand = self.prepareShellCommand('echo 0 > /sys/class/backlight/rpi_backlight/bl_power')
+        shellCommand = self.prepareShellCommand('echo 0 | sudo tee /sys/class/backlight/rpi_backlight/bl_power')
         os.system(shellCommand)
         self.close()
         self.log('Stopped Screensaver')
