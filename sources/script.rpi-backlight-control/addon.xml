@@ -23,7 +23,7 @@
        name="RPI Backlight Brightness Control" 
        version="0.1.1" provider-name="SebastiansIT">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
     
 	<!-- Application: Set the brightness to the configured value -->
