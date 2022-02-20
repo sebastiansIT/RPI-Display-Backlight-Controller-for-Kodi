@@ -21,7 +21,7 @@
 
 <addon id="de.sebastiansit.kodi.rpi.backlight.control" 
        name="RPI Backlight Brightness Control" 
-       version="0.1.1" provider-name="SebastiansIT">
+       version="0.2.1" provider-name="SebastiansIT">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -54,7 +54,9 @@
         <icon>icon.png</icon>
     </assets>
     
-    <news>v0.1.1 (2017-03-04)
+    <news>v0.2.0 (2022-02-20)
+        - change dependency from Python 2 to Python 3
+    v0.1.1 (2017-03-04)
         - update to Kodi 17.0 (Krypton)  
     v0.1.0 (2016-07-02)
         - Initial Release
