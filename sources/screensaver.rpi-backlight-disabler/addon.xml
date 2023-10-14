@@ -23,6 +23,7 @@
        name="Disable RPI Backlight" 
        version="0.3.0" provider-name="SebastiansIT">
 	<requires>
+        <!-- For actual Versions of XBMC see https://kodi.wiki/view/Addon.xml#%3Cimport%3E -->
 		<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
     
