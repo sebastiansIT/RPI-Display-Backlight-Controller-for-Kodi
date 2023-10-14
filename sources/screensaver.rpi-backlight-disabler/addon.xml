@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <!--
-    Copyright 2016, 2017 Sebastian Spautz <sebastian@human-injection.de>
+    Copyright 2016, 2017, 2023 Sebastian Spautz <sebastian@human-injection.de>
 
     This file is part of "RPI Display Backlight Control for Kodi".
     
@@ -21,9 +21,10 @@
 
 <addon id="de.sebastiansit.kodi.rpi.backlight.screensaver" 
        name="Disable RPI Backlight" 
-       version="0.2.0" provider-name="SebastiansIT">
+       version="0.3.0" provider-name="SebastiansIT">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+        <!-- For actual Versions of XBMC see https://kodi.wiki/view/Addon.xml#%3Cimport%3E -->
+		<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
     
     <!-- Screensaver: Disable Backlight -->
@@ -48,7 +49,9 @@
         <icon>icon.png</icon>
     </assets>
     
-    <news>v0.2.0 (2022-02-20)
+    <news>v0.3.0 (2023-02-20)
+        - update to Kodi 20 (Nexus)
+    v0.2.0 (2022-02-20)
         - change dependency from Python 2 to Python 3
     v0.1.3 (2017-04-21)
         - If Kodi isn't run as user root, try sudo for shell comands to disable/enable backlight
