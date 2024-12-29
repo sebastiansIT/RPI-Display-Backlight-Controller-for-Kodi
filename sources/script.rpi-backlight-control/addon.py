@@ -23,10 +23,10 @@ addon       = xbmcaddon.Addon()
 addonName   = addon.getAddonInfo('name')
  
 line1 = "The brightness of your display is set to "
-line3 = "Use plugin settings to change the value and start this addon again to change the brighness."
+line3 = "\nUse plugin settings to change the value and start this addon again to change the brighness."
 
 initialBrightness = addon.getSetting('rpi_backlight_brightness')
 shellCommand = 'echo ' + initialBrightness + ' > /sys/class/backlight/rpi_backlight/brightness'
 os.system(shellCommand)
  
-xbmcgui.Dialog().ok(addonName, line1, initialBrightness, line3)
+xbmcgui.Dialog().ok(addonName, line1 + initialBrightness + line3)
